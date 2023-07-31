@@ -1,0 +1,28 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment files
+.env
+
+# Ignore logs
+*.log
+
+# Ignore virtual environment directories
+venv/
+env/
+ENV/
+
+# Ignore local development configuration files
+config.local.py
+config.dev.py
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.bak
+*.swp

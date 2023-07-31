@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Socket Chat</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+    <div id="chatbox">
+        <div id="messages"></div>
+        <div id="input-container">
+            <textarea id="message_input" placeholder="Type your message..."></textarea>
+            <button id="send_button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
